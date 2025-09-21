@@ -1,0 +1,1 @@
+{"version":3,"file":"pubcli_api.spec.js","sourceRoot":"","sources":["../../../src/reader/pubcli_api.spec.ts"],"names":[],"mappings":"AAAA,OAAO,EAAE,MAAM,EAAE,MAAM,EAAE,MAAM,cAAc,CAAA;AAE7C,QAAQ,CAAC,YAAY,EAAE;IACrB,EAAE,CAAC,eAAe,EAAE;QAClB,MAAM,CAAC,MAAM,CAAC,cAAQ,OAAO,CAAC,CAAA,CAAC,CAAC,CAAC,CAAC,CAAC,cAAc,CAAC,MAAM,CAAC,CAAA;IAC3D,CAAC,CAAC,CAAA;AACJ,CAAC,CAAC,CAAA"}

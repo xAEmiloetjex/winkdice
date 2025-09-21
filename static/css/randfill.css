@@ -1,0 +1,1 @@
+*,*::before,*::after{transition:all .1s}table{font-family:arial,sans-serif;border-collapse:collapse}td,th{text-align:center;height:50px;width:50px;overflow:hidden;background-color:#000;font-size:8px}.indicator{background-color:#000;border-left:1em rgba(0,0,0,0) solid;width:2em}.indicator#activated{background-color:var(--theme-accent-3)}/*# sourceMappingURL=randfill.css.map */

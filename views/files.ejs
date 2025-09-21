@@ -1,0 +1,46 @@
+<%- contentFor('Documentation : Header') %>
+<!-- 
+  This is the homepage
+ -->
+<%- contentFor("headCode") %>
+<title><%= title %></title>
+<!-- <link rel="stylesheet" href="/css/index.css" /> -->
+<script src="/js/files.js" type="module" defer></script>
+
+<%- contentFor("body") %>
+
+<form action="/files/upload" method="post" enctype="multipart/form-data">
+    <!-- <input type="text" name="filename" id="filename"> -->
+    <input type="file" name="file" id="file">
+    <input type="text" name="user" id="user">
+    <input type="submit" value="Upload">
+</form>
+
+<section class="filelist">
+  <h3>Owned files:</h3>
+  <hr />
+  <ul class="owned-list">
+
+  </ul>
+  <br />
+  <h3>Viewer permission files:</h3>
+  <hr />
+  <ul class="viewer-list">
+
+  </ul>  <br />
+  <h3>Public files:</h3>
+  <hr />
+  <ul class="public-list">
+
+  </ul>
+</section>
+<%
+/* 
+<cust-todoitem checked>
+  Todo 1
+  <span slot="description">small text</span>
+</cust-todoitem>
+<cust-todoitem>Todo 1</cust-todoitem>
+<cust-todoitem>Todo 1</cust-todoitem>
+*/
+%>

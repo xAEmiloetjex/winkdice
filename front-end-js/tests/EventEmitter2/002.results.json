@@ -1,0 +1,35 @@
+{
+  "metadata": {
+    "ids": {
+      "EV0": "80b51402",
+      "EV1": "e2057942",
+      "EV2": "cf3c2a50",
+      "EV3": "71a245ca",
+      "EV4": "6b312c23"
+    },
+    "HandlerState_Statuses": { "Ok": 0, "Error": 1, "Global": 2, "Unkown": 3 }
+  },
+  "_dataCarry_local": {
+    "EV1": {
+      "HandlerState": { "instance": "e2057942", "status": 0 },
+      "obj": {
+        "emitId": "f804675800284324",
+        "name": "data_carry",
+        "data": [
+          {
+            "testName": "[EV1]<EventEmitter2>() test:data_carry_over<Local>",
+            "someOtherData": true
+          },
+          { "name": "data_carry", "ListenerId": "3e68778c38c7298e" }
+        ]
+      },
+      "ListenerResponse": {
+        "data1": {
+          "testName": "[EV1]<EventEmitter2>() test:data_carry_over<Local>",
+          "someOtherData": true
+        },
+        "data2": { "name": "data_carry", "ListenerId": "3e68778c38c7298e" }
+      }
+    }
+  }
+}

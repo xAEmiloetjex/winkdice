@@ -1,0 +1,35 @@
+<%- contentFor('Documentation : Header') %>
+<!-- 
+  This is the homepage
+ -->
+<%- contentFor("headCode") %>
+<title><%= title %></title>
+<link rel="stylesheet" href="/css/chat.css" />
+<script defer type="module" src="/js/chats.js"></script>
+
+<%- contentFor("body") %>
+<div class="form base">
+  <div class="form newDM">
+    <h3>New DM</h3>
+    <input type="text" name="" id="" class="dm_n" />
+    <button class="newDM_b">open DM</button>
+  </div>
+  <div class="form newChat">
+    <h3>Chat</h3>
+    <input type="text" name="" id="" class="chat_n" />
+    <button class="newchat_b">open chat</button>
+  </div>
+</div>
+
+<hr />
+<div class="chats_cont">
+  <div class="chats_dm">
+    <h1>DMs</h1>
+    <div class="container_" id="dms"></div>
+  </div>
+  <hr />
+  <div class="chats_own">
+    <h1>Owned Chats</h1>
+    <div class="container_" id="own"></div>
+  </div>
+</div>

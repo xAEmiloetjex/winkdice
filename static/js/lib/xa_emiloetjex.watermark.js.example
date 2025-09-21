@@ -1,0 +1,78 @@
+import axios from "./axios.min.js";
+import Utils, { Cookies, Toast, InfoUtils as PageInfo, CONFIG as CFG, _utils} from "./Utils.js"
+import { v3, v4 } from "./encryptionGen.js"
+
+const blobbie = await v3()
+
+// new Utils().doIf((10 + 2 == 12), () => {
+//     console.log("10 + 2 = 12")
+// })
+
+// const main = _utils.$utils.getDomElement("#main")
+// const data = await dataArray()
+// main.innerHTML = ''
+// for (const item of data) {
+//     main.innerHTML += `
+//         <div class="form post">
+//         <span class="button-label">${item.id}</span>
+//         <hr/>
+//         <div class="form" style="padding:0.5rem;background-color:var(--theme-bg);overflow-x:scroll;max-height:15rem;">
+//             <p class="postContent">
+//                 ${JSON.stringify(item.blob)}
+//             </p>
+//         </div>
+//         </div>
+//     `
+// }
+
+
+// async function dataArray() {
+//     return [
+//         {
+//             id: "000000",
+//             blob: blobbie,
+//         },
+//         {
+//             id: "000001",
+//             blob: await v4(blobbie),
+//         },
+//         {
+//             id: "000002",
+//             blob: await v4(await v3()),
+//         },
+//         {
+//             id: "000003",
+//             blob: await v4(await v4(await v3())),
+//         },
+//         {
+//             id: "000004",
+//             blob: await v4(await v4(await v4(await v3()))),
+//         },
+//         {
+//             id: "000005",
+//             blob: await v4(await v4(await v4(await v4(await v3())))),
+//         },
+//         {
+//             id: "000006",
+//             blob: await v4(await v4(await v4(await v4(await v4(await v3()))))),
+//         },
+//         {
+//             id: "000007",
+//             blob: await v4(await v4(await v4(await v4(await v4(await v4(await v3())))))),
+//         },
+//         {
+//             id: "000008",
+//             blob: await v4(await v4(await v4(await v4(await v4(await v4(await v4(await v3()))))))),
+//         },
+//         {
+//             id: "000009",
+//             blob: await v4(await v4(await v4(await v4(await v4(await v4(await v4(await v4(await v3())))))))),
+//         },
+//     ]
+// }
+
+// axios({
+//     method: "post",
+//     url: "/api/gen_qr_cons",
+//     data: {console:true,input: JSON.stringify({author:"xA_Emiloetjex", encryptionKey: blobbie.key})}
+// }).then((resp)=>{console.log(resp.data.data)})

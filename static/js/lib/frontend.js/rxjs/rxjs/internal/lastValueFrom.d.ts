@@ -1,0 +1,6 @@
+import type { Observable } from '../../observable/index';
+export interface LastValueFromConfig<T> {
+    defaultValue: T;
+}
+export declare function lastValueFrom<T, D>(source: Observable<T>, config: LastValueFromConfig<D>): Promise<T | D>;
+export declare function lastValueFrom<T>(source: Observable<T>): Promise<T>;

@@ -1,0 +1,16 @@
+import { fMap } from "../index";
+
+const s1 = fMap.set<any>()
+
+s1.set('user1')
+s1.set('user2')
+s1.set('user3')
+s1.set('user4')
+s1.set('user5')
+s1.set('user1')
+s1.set('user2')
+s1.set('user3')
+s1.set('user4')
+s1.set('user5')
+
+console.log(s1.all())

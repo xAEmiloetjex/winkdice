@@ -1,0 +1,61 @@
+{
+   // "ts-node": {
+   //    "swc": true
+   // },
+   "compilerOptions": {
+      "lib": [
+         "es5",
+         "es6",
+         "es2021"
+      ],
+      "target": "ESNext",
+      "module": "UMD",
+      "moduleResolution": "node",
+      "outDir": "./build",
+      "esModuleInterop": true,
+      "emitDecoratorMetadata": true,
+      "experimentalDecorators": true,
+      "sourceMap": true,
+      "declaration": true,
+      "allowJs": true,
+      "strict": false
+   },
+   "include": [
+      "./index.ts",
+      "./src/"
+   ],
+   "exclude": [
+      "./node_modules/",
+      "./testChatbot/node_modules/",
+      "./Pogy/",
+      "./Guilded-Discord-Bridge/",
+      "./nextjs-mui-frontend/",
+      "./mfm.js/",
+      "./node_modules/*",
+      "./testChatbot/node_modules/*",
+      "./Pogy/*",
+      "./Guilded-Discord-Bridge/*",
+      "./nextjs-mui-frontend/*",
+      "./mfm.js/*",
+      "./node_modules/**",
+      "./testChatbot/node_modules/**",
+      "./Pogy/**",
+      "./Guilded-Discord-Bridge/**",
+      "./nextjs-mui-frontend/**",
+      "./mfm.js/**",
+      // // // // // // // // // //
+      "./sourceRefs",
+      "./sourceRefs/",
+      "./sourceRefs/*",
+      "./sourceRefs/**",
+      "./static/"
+   ]
+   // "exclude": [
+   //    "static",
+   //    "views",
+   //    "build",
+   //    "testBot",
+   //    "testChatBot",
+   //    "*/node_modules"
+   // ]
+}

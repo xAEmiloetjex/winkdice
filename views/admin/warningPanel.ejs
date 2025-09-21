@@ -1,0 +1,24 @@
+<%- contentFor('Documentation : Header') %>
+<!-- 
+  This is the homepage
+ -->
+<%- contentFor("headCode") %>
+<title><%= title %></title>
+<link rel="stylesheet" href="/css/admin/warningPanel.css" />
+<script src="/js/admin/warningPanel.js" type="module" defer></script>
+
+<%- contentFor("body") %>
+
+<section class="form center_E">
+    <h3>Add new warning to a user</h3>
+    <input type="text" name="user" id="user">
+    <select name="type" id="type">
+        <option value="auto">top</option>
+        <option value="light">modal</option>
+        <option value="dark">toast</option>
+    </select>
+</section>
+
+<section class="filelist form center_E">
+<ul class="list"></ul>
+</section>

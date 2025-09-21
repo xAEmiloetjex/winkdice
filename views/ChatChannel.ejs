@@ -1,0 +1,19 @@
+<%- contentFor('Documentation : Header') %>
+<!-- 
+  This is the homepage
+ -->
+<%- contentFor("headCode") %>
+<title><%= title %></title>
+<link rel="stylesheet" href="/css/chat.css" />
+<script defer type="module" src="/js/chatChannel.js"></script>
+
+<%- contentFor("body") %>
+<div class="container_">
+    <div class="messages"></div>
+    <form class="form messageBox">
+        <input type="text" class="message" placeholder="Message..." name="message">
+        <button class="cc_AutoBTN" stlye="display:none"></button>
+    </form>
+</div>
+
+<input type="text" name="target" class="chatTarget" value="<%= chatTarget %>" hidden/>

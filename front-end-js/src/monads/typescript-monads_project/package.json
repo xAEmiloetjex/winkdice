@@ -1,0 +1,112 @@
+{
+  "name": "typescript-monads",
+  "version": "0.0.0-development",
+  "description": "Write cleaner TypeScript",
+  "main": "index.js",
+  "module": "index.esm.js",
+  "commonJs": "index.cjs.js",
+  "typings": "index.d.ts",
+  "sideEffects": false,
+  "author": "Patrick Michalina <patrickmichalina@mac.com> (https://patrickmichalina.com)",
+  "contributors": [
+    "Williama Reynolds"
+  ],
+  "license": "MIT",
+  "repository": {
+    "type": "git",
+    "url": "https://github.com/patrickmichalina/typescript-monads"
+  },
+  "keywords": [
+    "typescript",
+    "javascript",
+    "monads",
+    "maybe",
+    "result",
+    "either",
+    "list",
+    "state",
+    "functional",
+    "list-monad",
+    "maybe-monad",
+    "either-monad",
+    "result-monad",
+    "state-monad"
+  ],
+  "scripts": {
+    "test": "jest --maxWorkers=6",
+    "test.watch": "jest --watch",
+    "dist": "ts-node ./scripts/publish-prep.ts",
+    "lint": "tsc --noEmit && eslint '{src,apps,libs,test,e2e,tools}/**/*.ts'",
+    "lint.fix": "npm run lint -- --fix",
+    "build": "tsc -p tsconfig.build.json && npm run rollup && terser dist/index.js -o dist/index.min.js --source-map",
+    "rollup": "rollup -c rollup.config.js"
+  },
+  "release": {
+    "pkgRoot": "dist"
+  },
+  "devDependencies": {
+    "@rollup/plugin-typescript": "^8.3.4",
+    "@types/fs-extra": "^11.0.1",
+    "@types/jest": "^29.5.1",
+    "@types/node": "^18.16.3",
+    "@typescript-eslint/eslint-plugin": "^5.59.2",
+    "@typescript-eslint/parser": "^5.59.2",
+    "codecov": "^3.8.3",
+    "eslint": "^8.39.0",
+    "eslint-plugin-promise": "^6.1.1",
+    "eslint-plugin-rxjs": "5.0.3",
+    "fast-check": "^3.8.1",
+    "fs-extra": "^11.1.1",
+    "istanbul": "^0.4.5",
+    "jest": "29.5.0",
+    "jest-junit": "^16.0.0",
+    "rollup": "^2.78.0",
+    "semantic-release": "^21.0.2",
+    "terser": "^5.17.1",
+    "ts-jest": "^29.1.0",
+    "ts-node": "^10.9.1",
+    "tslib": "^2.5.0",
+    "typescript": "^5.0.4"
+  },
+  "optionalDependencies": {
+    "rxjs": "^7"
+  },
+  "jest": {
+    "testEnvironmentOptions": {
+      "url": "http://localhost"
+    },
+    "collectCoverage": true,
+    "collectCoverageFrom": [
+      "src/**/*.ts"
+    ],
+    "coverageReporters": [
+      "lcov",
+      "text"
+    ],
+    "coverageThreshold": {
+      "global": {
+        "branches": 100,
+        "functions": 100,
+        "lines": 100,
+        "statements": 100
+      }
+    },
+    "transform": {
+      "^.+\\.tsx?$": "ts-jest"
+    },
+    "testPathIgnorePatterns": [
+      "/node_modules/",
+      "/dist/",
+      "public_api.ts"
+    ],
+    "testRegex": "(/__tests__/.*|(\\.|/)(test|spec))\\.(ts?)$",
+    "moduleFileExtensions": [
+      "ts",
+      "tsx",
+      "js",
+      "jsx",
+      "json",
+      "node"
+    ]
+  }
+}

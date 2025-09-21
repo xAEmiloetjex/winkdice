@@ -1,0 +1,56 @@
+<%- contentFor('Documentation : Header') %>
+<!-- 
+  This is the homepage
+ -->
+<%- contentFor("headCode") %>
+<title><%= title %></title>
+<!-- <link rel="stylesheet" href="/css/index.css" /> -->
+<script src="/js/viewfile.js" type="module" defer></script>
+
+<%- contentFor("body") %>
+<header class="PermSection">
+    <select class="viewerList">
+
+    </select>
+    <button class="viewerRemove">Remove User</button>
+    <button class="viewerAdd">Add User</button>
+</header>
+
+<section class="file">
+<%
+    const _ = data;
+    const mimetype = data.fileData.mimetype;
+    const fileOwner = data.fileData.uploader;
+
+    if (mimetype.startsWith("text/")) {
+    %>
+        <iframe class="frame" type="<%- mimetype %>"></iframe>
+    <%
+    } else if (mimetype.startsWith("video/")) {
+    %>
+        <video class="frame" controls type="<%- mimetype %>"></video>
+    <%
+    } else if (mimetype.startsWith("audio/")) {
+    %>
+        <video class="frame" controls type="<%- mimetype %>"></video>
+    <%
+    } else if (mimetype.startsWith("image/")) {
+    %>
+        <img class="frame" type="<%- mimetype %>" />
+    <%
+    }
+%>
+<input type="text" name="author" id="author" value="<%= fileOwner %>" style="display: none;" />
+<input type="text" name="userList" id="userList" value="<%= _.fileData.viewers ? JSON.stringify(_.fileData.viewers) : [] %>" style="display: none;" />
+<input type="text" name="fileid" id="fileid" value="<%= _.id %>" style="display: none;" />
+</section>
+<%
+/* 
+<cust-todoitem checked>
+  Todo 1
+  <span slot="description">small text</span>
+</cust-todoitem>
+<cust-todoitem>Todo 1</cust-todoitem>
+<cust-todoitem>Todo 1</cust-todoitem>
+*/
+%>

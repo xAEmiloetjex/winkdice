@@ -1,0 +1,38 @@
+<%- contentFor('Documentation : Header') %>
+<!-- 
+  This is the homepage
+ -->
+<%- contentFor("headCode") %>
+<title><%= title %></title>
+<!-- <link rel="stylesheet" href="/css/chat.css" />
+<script defer type="module" src="/js/testPage.js"></script> -->
+<script defer type="module" src="/js/mcserv/index.js"></script>
+
+<%- contentFor("body") %>
+
+<input class="hidden" name="pagenum" type="number" value="<%= pagenum %>" />
+
+<main id="main" class="main2">
+  <div class="vagina-tion pagination"></div>
+  <hr />
+  <br />
+  <article>
+    <header class="mcServ_Header">
+      <h1>Servers</h1>
+    </header>
+    <section>
+      <ul class="buglist">
+       
+      </ul>
+    </section>
+    <!-- <footer class="center_E">
+      <p>
+        Signed:
+        <br />
+        <attr title="Amber-Emily Amy Nagtegaal">
+          <img src="/Signature.svg" style="height: 75px; background: white" />
+        </attr>
+      </p>
+    </footer> -->
+  </article>
+</main>

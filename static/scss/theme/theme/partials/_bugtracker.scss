@@ -1,0 +1,23 @@
+.bug-tag {
+  padding: 0.2em;
+}
+
+.bug-fixed {
+  background: var(--green_5);
+}
+
+.bug-patched {
+  background: var(--blue_2);
+}
+
+.bug-minor {
+  background: var(--yellow_5);
+}
+
+.bug-problematic {
+  background: var(--orange_5);
+}
+
+.bug-fatal {
+  background: var(--red_5);
+}

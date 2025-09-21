@@ -1,0 +1,89 @@
+<!DOCTYPE html>
+<html lang="en" class="" data-theme="" data-colorscheme="">
+
+<head>
+  <meta charset="UTF-8" />
+  <meta http-equiv="X-UA-Compatible" content="IE=edge" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+
+  <meta content="WinkDice" property="og:title" />
+  <meta content="Just a little project, nothing big or anything (Totally not foreshadowing)" property="og:description" />
+  <meta content="/" property="og:url" />
+  <meta content="/logo.png" property="og:image" />
+  <meta content="#3584e4" data-react-helmet="true" name="theme-color" />
+
+  <link rel="stylesheet" href="/css/theme/special.css" />
+
+  <script src="/js/_globals.js" type="module" defer></script>
+  <script src="/js/createPost.js" type="module" defer></script>
+
+  <script src="https://code.iconify.design/iconify-icon/1.0.8/iconify-icon.min.js"></script>
+
+
+  <%- defineContent('headCode') %>
+</head>
+
+<body>
+  <div class="form announcement" style="background-color: var(--theme-accent-2);"></div>
+
+  <div class="footer-0">
+    <%- include("../components/nav.ejs") %>
+  </div>
+
+  <main id="main">
+    <%- body %>
+    <div class="licensing-and-info">
+    </div>
+  </main>
+
+  <script>
+    function openNav() {
+      document.getElementById("mySidebar").style.width = "250px";
+      document.getElementById("main").style.marginLeft = "255px";
+    }
+
+    function closeNav() {
+      document.getElementById("mySidebar").style.width = "0";
+      document.getElementById("main").style.marginLeft = "25px";
+    }
+  </script>
+
+  <script type="module">
+    import axios from "/js/lib/axios.min.js";
+
+    // document.querySelector(".openbtn").addEventListener("click", (ev) => ev.preventDefault() && openNav())
+    // document.querySelector(".closebtn").addEventListener("click", (ev) => ev.preventDefault() && openNav())
+
+    const Url = window.location.origin + window.location.pathname
+    const qrC = document.querySelector(".nav-qrcode")
+
+    qrC.setAttribute("href", Url)
+    qrC.style.backgroundImage = `url("/api/gen/qrcode/${encodeURIComponent(Url)}")`;
+    qrC.style.maxWidth = "250px"
+    qrC.style.maxHeight = "250px"
+    qrC.style.width = "148px"
+    qrC.style.height = "148px"
+    qrC.style.backgroundSize = "contain"
+    // if (document.URL.endsWith("chat")) kill()
+    // else if (document.URL.endsWith("theme")) kill()
+    // else if (document.URL.includes("/files/open/")) kill()
+    // else {
+    // const qrC = document.querySelector(".nav-qrcode")
+    // qrC.setAttribute("href", window.location.origin + "/")
+    // qrC.style.backgroundImage = `url("/api/qrcode/${encodeURIComponent(window.location.origin + "/")}")`;
+    // qrC.style.width="148px"
+    // qrC.style.height="148px"
+    // }
+    function kill() {
+      document.querySelector(".footer-0").style.display = "none"
+      document.querySelector(".footer-0").remove()
+      document.getElementById("mySidebar").style.display = "none"
+      document.getElementById("mySidebar").innerHTML = ""
+    }
+  </script>
+</body>
+
+</html>
+</body>
+
+</html>

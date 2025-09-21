@@ -1,0 +1,30 @@
+import { ElementRef, OnInit } from '@angular/core';
+import { Observable } from 'rxjs';
+import { LocationService } from 'app/shared/location.service';
+import { ApiSection, ApiService } from './api.service';
+import { Option } from 'app/shared/select/select.component';
+export declare class ApiListComponent implements OnInit {
+    private apiService;
+    private locationService;
+    filteredSections: Observable<ApiSection[]>;
+    showStatusMenu: boolean;
+    showTypeMenu: boolean;
+    private criteriaSubject;
+    private searchCriteria;
+    status: Option;
+    type: Option;
+    types: Option[];
+    statuses: Option[];
+    queryEl: ElementRef;
+    constructor(apiService: ApiService, locationService: LocationService);
+    ngOnInit(): void;
+    setQuery(query: string): void;
+    setStatus(status: Option): void;
+    setType(type: Option): void;
+    toggleStatusMenu(): void;
+    toggleTypeMenu(): void;
+    private filterSection;
+    private initializeSearchCriteria;
+    private setLocationSearch;
+    private setSearchCriteria;
+}

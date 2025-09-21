@@ -1,0 +1,70 @@
+h1 {}
+
+h2 {}
+
+h3 {}
+
+h4 {}
+
+h5 {}
+
+h6 {}
+
+p {}
+
+strong {}
+
+b {}
+
+em {}
+
+s {
+  text-decoration: line-through #FF0000 2px;
+}
+
+a {
+  padding: .2rem;
+  color: var(--theme-fg);
+  text-decoration: var(--theme-fg) underline dotted;
+  background: var(--theme-accent-2);
+  border-radius: .2rem;
+}
+
+a:active {
+  /* color: inherit;
+	text-decoration: inherit; */
+  background: var(--theme-accent-5);
+  /* padding: inherit;
+	border-radius: inherit; */
+}
+
+a:visited {
+  /* color: inherit;
+	text-decoration: inherit; */
+  background: var(--theme-accent-4);
+  /* padding: inherit;
+	border-radius: inherit; */
+}
+
+a:hover {
+  /* color: inherit;
+	text-decoration: inherit; */
+  background: var(--theme-accent-3);
+  /* padding: inherit;
+	border-radius: inherit; */
+}
+
+blockquote {
+  padding: .5rem;
+  color: var(--dark_4);
+  background: var(--theme-accent-1);
+  border-radius: 10px;
+}
+
+blockquote p {}
+
+blockquote footer {}
+
+hr.fileDiv {
+  border: #000A 1px dashed;
+}

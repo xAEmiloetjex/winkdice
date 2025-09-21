@@ -1,0 +1,33 @@
+import { IResult } from '../result/result.interface.js';
+import { IMaybePattern, IMaybe } from './maybe.interface.js';
+export declare class Maybe<T> implements IMaybe<T> {
+    private readonly value?;
+    constructor(value?: T | null);
+    of(value: T): IMaybe<T>;
+    static none<T>(): IMaybe<T>;
+    static some<T>(value: T): IMaybe<T>;
+    isSome(): boolean;
+    isNone(): boolean;
+    valueOr(value: NonNullable<T>): NonNullable<T>;
+    valueOrUndefined(): T | undefined;
+    valueOrNull(): T | null;
+    valueOrCompute(fn: () => NonNullable<T>): NonNullable<T>;
+    valueOrThrow(msg?: string): NonNullable<T>;
+    valueOrThrowErr(err?: Error): NonNullable<T>;
+    tap(obj: Partial<IMaybePattern<T, void>>): void;
+    tapNone(fn: () => void): void;
+    tapSome(fn: (val: NonNullable<T>) => void): void;
+    tapThru(val: Partial<IMaybePattern<T, void>>): IMaybe<T>;
+    tapThruNone(fn: () => void): IMaybe<T>;
+    tapThruSome(fn: (val: T) => void): IMaybe<T>;
+    match<R>(pattern: IMaybePattern<T, R>): R;
+    toArray(): ReadonlyArray<T>;
+    map<R>(fn: (t: NonNullable<T>) => NonNullable<R>): IMaybe<R>;
+    mapTo<R>(t: NonNullable<R>): IMaybe<R>;
+    flatMap<R>(fn: (d: NonNullable<T>) => IMaybe<R>): IMaybe<R>;
+    flatMapAuto<R>(fn: (d: NonNullable<T>) => R): IMaybe<NonNullable<R>>;
+    project<R extends T[keyof T]>(fn: (d: NonNullable<T>) => R): IMaybe<NonNullable<R>>;
+    filter(fn: (f: NonNullable<T>) => boolean): IMaybe<T>;
+    apply<R>(maybeFn: IMaybe<(t: NonNullable<T>) => R>): IMaybe<NonNullable<R>>;
+    toResult<E>(error: E): IResult<T, E>;
+}

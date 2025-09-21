@@ -1,0 +1,38 @@
+<%- contentFor('Documentation : Header') %>
+<!-- 
+  This is the homepage
+ -->
+<%- contentFor("headCode") %>
+<title><%= title %></title>
+<script defer type="module" src="/js/register.js"></script>
+<!-- <link rel="stylesheet" href="/css/index.css" /> -->
+
+<%- contentFor("body") %>
+<div class="" style="background-color: #13131310; padding: 2rem;">
+<div class="form logout" style="text-align: center;">
+    <button class="logout-btn" data-colorscheme="orange"></button>
+</div>
+<br/>
+<div class="form login">
+    <h1>Login</h1>
+    <input type="text" placeholder="Username or Email" class="username_log" /> <br/>
+    <input type="password" placeholder="Password" class="password_log" />
+    <!-- <input type="text" placeholder="Email" class="email"/> -->
+    <hr />
+    <div style="text-align: center;">
+        <button class="login-btn" data-colorscheme="green"></button>
+    </div>
+</div>
+<br/>
+<div class="form register">
+    <h1>Register</h1>
+    <input type="email" placeholder="email" class="email_reg" /> <br/>
+    <input type="text" placeholder="Username" class="username_reg" /> <br/>
+    <input type="password" placeholder="Password" class="password_reg" />
+    <!-- <input type="text" placeholder="Email" class="email"/> -->
+    <hr />
+    <div style="text-align: center;">
+        <button class="register-btn" data-colorscheme="blue"></button>
+    </div>
+</div>
+</div>

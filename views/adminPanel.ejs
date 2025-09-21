@@ -1,0 +1,26 @@
+<%- contentFor('Documentation : Header') %>
+<!-- 
+  This is the homepage
+ -->
+<%- contentFor("headCode") %>
+<title><%= title %></title>
+<!-- <link rel="stylesheet" href="/css/chat.css" /> -->
+<script defer type="module" src="/js/adminPanel.js"></script>
+
+<%- contentFor("body") %>
+<div class="form notify" action="/admin">
+    <textarea name="NotifyText" id="" cols="30" rows="10"></textarea>
+    <button class="notif-btn">Send Notification</button>
+</div>
+<div class="form backend" action="/admin">
+  <textarea name="BackendText" id="" cols="30" rows="10"></textarea>
+  <button class="backend-btn">Send code to backend</button>
+</div>
+<br>
+<div class="form userData">
+  <input type="text" name="userToken" class="userdata_token" placeholder="user token" />
+
+  <textarea name="userData_json" id="" cols="30" rows="10"></textarea>
+
+  <button class="usrdat_update">Update!</button>
+</div>

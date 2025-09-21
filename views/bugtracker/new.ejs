@@ -1,0 +1,97 @@
+<%- contentFor('Documentation : Header') %>
+<!-- 
+  This is the homepage
+ -->
+<%- contentFor("headCode") %>
+<title><%= title %></title>
+<!-- <link rel="stylesheet" href="/css/chat.css" />
+<script defer type="module" src="/js/testPage.js"></script> -->
+<script defer type="module" src="/js/bugtracker/new.js"></script>
+
+<%- contentFor("body") %>
+
+<input class="hidden" name="pagenum" type="number" value="<%= pagenum %>" />
+
+<main id="main" class="main2">
+  <div class="vagina-tion pagination"></div>
+  <hr />
+  <br />
+  <article>
+    <header>
+      <h1>Bug Reports</h1>
+    </header>
+    <section>
+        <div style="text-align:center;" class="buglist form">
+            <!-- <input type="text" name="filename" id="filename"> -->
+            <!-- <input type="file" name="file" id="file"> -->
+            <input type="text" name="user" id="user" style="display:none;">
+            
+            <h3>Title</h3>
+            <input type="text" name="title" id="title" style="width:80%;" />
+            
+            <h3>Platform</h3>
+            <div class="form">
+                <input type="radio" name="platform" value="discord" id="discord">
+                <label for="discord">
+                    <code class="button-label" style="background:var(--theme-bg-shade-4)">discord</code>
+                </label>
+                <input type="radio" name="platform" value="guilded" id="guilded">
+                <label for="guilded">
+                    <code class="button-label" style="background:var(--theme-bg-shade-4)">guilded</code>
+                </label>
+                <input type="radio" name="platform" value="minecraft-lifesteal" id="minecraft-lifesteal">
+                <label for="minecraft-lifesteal">
+                    <code class="button-label" style="background:var(--theme-bg-shade-4)">minecraft-lifesteal</code>
+                </label>
+                <input type="radio" name="platform" value="roblox-citylife" id="roblox-citylife">
+                <label for="roblox-citylife">
+                    <code class="button-label" style="background:var(--theme-bg-shade-4)">roblox-citylife</code>
+                </label>
+                <input type="radio" name="platform" value="xim" id="xim">
+                <label for="xim">
+                    <code class="button-label" style="background:var(--theme-bg-shade-4)">xim</code>
+                </label>
+                <input type="radio" name="platform" value="winkdice" id="winkdice">
+                <label for="winkdice">
+                    <code class="button-label" style="background:var(--theme-bg-shade-4)">winkdice</code>
+                </label>
+                
+            </div>
+
+            <h3>Severity</h3>
+            <div class="form">
+                <input type="radio" name="severity" value="minor" id="minor">
+                <label for="minor">
+                    <code class="button-label bug-tag bug-minor">minor</code>
+                </label>
+                
+                <input type="radio" name="severity" value="problematic" id="problematic">
+                <label for="problematic">
+                    <code class="button-label bug-tag bug-problematic">problematic</code>
+                </label>
+                
+                <input type="radio" name="severity" value="fatal" id="fatal">
+                <label for="fatal">
+                    <code class="button-label bug-tag bug-fatal">fatal</code>
+                </label>
+            </div>
+            
+            <h3>Description</h3>
+            <textarea name="desc" style="width: 80%; height: 60vh;">
+                
+            </textarea>
+
+            <input type="submit" value="Submit" name="submit" />
+        </div>
+    </section>
+    <!-- <footer class="center_E">
+      <p>
+        Signed:
+        <br />
+        <attr title="Amber-Emily Amy Nagtegaal">
+          <img src="/Signature.svg" style="height: 75px; background: white" />
+        </attr>
+      </p>
+    </footer> -->
+  </article>
+</main>

@@ -1,0 +1,108 @@
+<%- contentFor('Documentation : Header') %>
+<!-- 
+  This is the homepage
+ -->
+<%- contentFor("headCode") %>
+<title><%= title %></title>
+<!-- <link rel="stylesheet" href="/css/chat.css" />
+<script defer type="module" src="/js/testPage.js"></script> -->
+<!-- <script defer type="module" src="/js/lib/framework/examples/components/index.js"></script> -->
+
+<%- contentFor("body") %>
+<main id="main" class="main2">
+  <article>
+    <header>
+      <h1>update v2.0.1</h1>
+    </header>
+    <section>
+      <ul>
+        <!-- BLOCK:START -->
+
+        <li class="form">
+          <header>
+            <h3>Fixed some bugs</h3>
+          </header>
+          <section>
+            <ol>
+              <li>
+                <code class="button-label bug-tag bug-fixed">BUG:000008</code>
+                Calculator app doesn't replace all the characters on formating
+                before parsing
+              </li>
+            </ol>
+          </section>
+        </li>
+        <br />
+
+        <!-- BLOCK:END -->
+        <!-- BLOCK:START -->
+
+        <li class="form">
+          <header>
+            <h3>Updated CSS</h3>
+          </header>
+          <section>
+            <ol>
+              <li>
+                Mainly very minor changes visually, but still noticable if you
+                compare the old to the new
+              </li>
+            </ol>
+          </section>
+        </li>
+        <br />
+
+        <!-- BLOCK:END -->
+        <!-- BLOCK:START -->
+
+        <li class="form">
+          <header>
+            <h3>Added: Bug Tracker</h3>
+          </header>
+          <section>
+            <ol>
+              <li>
+                (Unfinished, Example shows generated data using faker-js)
+                <hr />
+                <img src="/screenshots/001.jpg" style="width: 70%;"/>
+              </li>
+            </ol>
+          </section>
+        </li>
+        <br />
+
+        <!-- BLOCK:END -->        <!-- BLOCK:START -->
+
+        <li class="form">
+          <header>
+            <h3>Added: Admin site controls</h3>
+          </header>
+          <section>
+            <ol>
+              <li>
+                Added controls for:
+                <ul>
+                  <li>maintenance mode</li>
+                  <li>Reloading pages (or all pages)</li>
+                  <li>code eveluation on all clients (we have had an Remote Client control Utilities API for quite a while now and this is still the standard)</li>
+                </ul>
+              </li>
+            </ol>
+          </section>
+        </li>
+        <br />
+
+        <!-- BLOCK:END -->
+      </ul>
+    </section>
+    <footer class="center_E">
+      <p>
+        Signed:
+        <br />
+        <attr title="Amber-Emily Amy Nagtegaal">
+          <img src="/Signature.svg" style="height: 75px; background: white" />
+        </attr>
+      </p>
+    </footer>
+  </article>
+</main>

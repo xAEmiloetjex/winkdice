@@ -1,0 +1,71 @@
+import { IMaybe } from '../maybe/public_api.js';
+import { IResultMatchPattern, IResult } from './result.interface.js';
+export declare abstract class Result<TOk, TFail> implements IResult<TOk, TFail> {
+    static ok<TOk, TFail>(value: TOk): IResult<TOk, TFail>;
+    static fail<TOk, TFail>(value: TFail): IResult<TOk, TFail>;
+    abstract isOk(): this is OkResult<TOk, TFail>;
+    abstract isFail(): this is FailResult<TOk, TFail>;
+    abstract unwrap(): TOk | never;
+    abstract unwrapOr(opt: TOk): TOk;
+    abstract unwrapFail(): TFail | never;
+    abstract maybeOk(): IMaybe<NonNullable<TOk>>;
+    abstract maybeFail(): IMaybe<TFail>;
+    abstract match<M>(fn: IResultMatchPattern<TOk, TFail, M>): M;
+    abstract map<M>(fn: (val: TOk) => M): IResult<M, TFail>;
+    abstract mapFail<M>(fn: (err: TFail) => M): IResult<TOk, M>;
+    abstract flatMap<M>(fn: (val: TOk) => IResult<M, TFail>): IResult<M, TFail>;
+    abstract toFailWhenOk(fn: (val: TOk) => TFail): IResult<TOk, TFail>;
+    abstract toFailWhenOkFrom(val: TFail): IResult<TOk, TFail>;
+    abstract tap(val: IResultMatchPattern<TOk, TFail, void>): void;
+    abstract tapOk(f: (val: TOk) => void): void;
+    abstract tapFail(f: (val: TFail) => void): void;
+    abstract tapThru(val: Partial<IResultMatchPattern<TOk, TFail, void>>): IResult<TOk, TFail>;
+    abstract tapOkThru(fn: (val: TOk) => void): IResult<TOk, TFail>;
+    abstract tapFailThru(fn: (val: TFail) => void): IResult<TOk, TFail>;
+}
+export declare class OkResult<TOk, TFail> extends Result<TOk, TFail> {
+    private readonly successValue;
+    constructor(successValue: TOk);
+    isOk(): this is OkResult<TOk, TFail>;
+    isFail(): this is FailResult<TOk, TFail>;
+    unwrap(): TOk;
+    unwrapOr(): TOk;
+    unwrapFail(): never;
+    maybeOk(): IMaybe<NonNullable<TOk>>;
+    maybeFail(): IMaybe<TFail>;
+    match<M>(fn: IResultMatchPattern<TOk, TFail, M>): M;
+    map<M>(fn: (val: TOk) => M): IResult<M, TFail>;
+    mapFail<M>(): IResult<TOk, M>;
+    flatMap<M>(fn: (val: TOk) => IResult<M, TFail>): IResult<M, TFail>;
+    toFailWhenOk(fn: (val: TOk) => TFail): IResult<TOk, TFail>;
+    toFailWhenOkFrom(val: TFail): IResult<TOk, TFail>;
+    tap(val: Partial<IResultMatchPattern<TOk, TFail, void>>): void;
+    tapOk(fn: (val: TOk) => void): void;
+    tapFail(): void;
+    tapFailThru(): IResult<TOk, TFail>;
+    tapOkThru(fn: (val: TOk) => void): IResult<TOk, TFail>;
+    tapThru(val: Partial<IResultMatchPattern<TOk, TFail, void>>): IResult<TOk, TFail>;
+}
+export declare class FailResult<TOk, TFail> extends Result<TOk, TFail> implements IResult<TOk, TFail> {
+    private readonly failureValue;
+    constructor(failureValue: TFail);
+    isOk(): this is OkResult<TOk, TFail>;
+    isFail(): this is FailResult<TOk, TFail>;
+    unwrap(): TOk;
+    unwrapOr(opt: TOk): TOk;
+    unwrapFail(): TFail;
+    maybeOk(): IMaybe<NonNullable<TOk>>;
+    maybeFail(): IMaybe<TFail>;
+    match<M>(fn: IResultMatchPattern<TOk, TFail, M>): M;
+    mapFail<M>(fn: (err: TFail) => M): IResult<TOk, M>;
+    map<M>(): IResult<M, TFail>;
+    flatMap<M>(): IResult<M, TFail>;
+    toFailWhenOk(): IResult<TOk, TFail>;
+    toFailWhenOkFrom(val: TFail): IResult<TOk, TFail>;
+    tap(val: Partial<IResultMatchPattern<TOk, TFail, void>>): void;
+    tapOk(): void;
+    tapFail(fn: (val: TFail) => void): void;
+    tapFailThru(fn: (val: TFail) => void): IResult<TOk, TFail>;
+    tapOkThru(): IResult<TOk, TFail>;
+    tapThru(val: Partial<IResultMatchPattern<TOk, TFail, void>>): IResult<TOk, TFail>;
+}

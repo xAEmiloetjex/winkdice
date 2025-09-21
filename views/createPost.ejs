@@ -1,0 +1,17 @@
+<%- contentFor('Documentation : Header') %>
+<!-- 
+  This is the homepage
+ -->
+<%- contentFor("headCode") %>
+<title><%= title %></title>
+<script defer type="module" src="/js/createPost.js"></script>
+<link rel="stylesheet" href="/css/createPost.css" />
+
+<%- contentFor("body") %>
+<section class="form joe">
+    <input type="text" name="title" id="title" class="postTitle">
+    <hr />
+    <textarea name="content" id="content" class="postContent" cols="30" rows="10"></textarea>
+
+    <input type="file" name="file" id="file" class="postContentF">
+</section>

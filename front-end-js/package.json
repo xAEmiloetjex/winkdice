@@ -1,0 +1,26 @@
+{
+  "name": "front-end-js",
+  "version": "1.0.0",
+  "description": "",
+  "main": "index.js",
+  "scripts": {
+    "test": "pnpm run tests:EventEmitter2",
+    "build": "pnpm run build:step1 && pnpm run build:step2",
+    "build:step1": "rm -rf ./build",
+    "build:step2": "tsc",
+    "tests:index": "nodemon --watch \"tests/**\" --ext \"ts,json\" --ignore \"src/**/*.spec.ts\" --exec \"ts-node -p ./tsconfig.tests.json ./tests/index.test.ts\"",
+    "tests:EventEmitter2": "pnpm run tests:EventEmitter2:001 && pnpm run tests:EventEmitter2:002",
+    "tests:EventEmitter2:001": "node ./tests/build/tests/EventEmitter2/001.test.js",
+    "tests:EventEmitter2:002": "node ./tests/build/tests/EventEmitter2/002.test.js"
+  },
+  "keywords": [],
+  "author": "",
+  "license": "ISC",
+  "devDependencies": {
+    "@types/mocha": "^10.0.9",
+    "mocha": "^10.7.3",
+    "nodemon": "^3.1.7",
+    "ts-node": "^10.9.2",
+    "typescript": "^5.6.2"
+  }
+}

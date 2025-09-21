@@ -1,0 +1,81 @@
+form, .form {
+  padding: .4rem;
+  /* border: 1px solid #000; */
+  background: var(--theme-bg-2);
+  border-radius: 10px;
+}
+
+form > *, .form > * {
+  margin: .3rem;
+}
+
+form header, .form > header {
+  padding: .2rem;
+  background: var(--theme-bg-shade-2);
+
+  /* background: #7e2020; */
+  border: 1px solid #CCCCCC87;
+  border-radius: 10px;
+}
+
+form p, .form p {
+  /* background: #8f3d84; */
+}
+
+form fieldset, .form fieldset {
+  /* border:groove 5px ; */
+  /* background:  #3d6c7f; */
+
+  background: var(--blue_2);
+  border: 1px var(--blue_2) solid;
+  border-left: 5px var(--blue_4) solid;
+}
+
+form fieldset legend, .form fieldset legend {
+  padding: .2rem;
+  background:  var(--theme-bg-3);
+  border-radius: 5px;
+}
+
+form label, .form label {
+
+  /* background:  #694884; */
+}
+
+form input, .form input {
+  padding: .2rem;
+  background: var(--theme-bg-3);
+  border: 1px solid #CCCCCC87;
+  border-radius: 10px;
+}
+
+form input[disabled], .form input[disabled] {
+  padding: .2rem;
+  color: #545454;
+  /* border: 1px solid #CCCCCC87; */
+  background: #969292;
+  border-radius: 10px;
+}
+
+form textarea, .form textarea {
+  padding: .2rem;
+  background: var(--theme-bg-3);
+  border: 1px solid #CCCCCC87;
+  border-radius: 10px;
+}
+
+input[type=submit], input[type=button], input[type=reset], button, .button-label {
+
+  width: fit-content;
+  padding: .3rem;
+  color: #fff;
+  background: var(--theme-accent-2);
+  border: none;
+  border-radius: 3px;
+}
+
+*:disabled, *[disabled] {
+  color: var(--theme-bg-shade-5);
+  background: var(--theme-fg-shade-5);
+  cursor:not-allowed;
+}

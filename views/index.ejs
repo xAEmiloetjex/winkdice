@@ -1,0 +1,17 @@
+<%- contentFor('Documentation : Header') %>
+<!-- 
+  This is the homepage
+ -->
+<%- contentFor("headCode") %>
+<title><%= title %></title>
+<!-- <link rel="stylesheet" href="/css/index.css" /> -->
+<script type="module" src="/js/home.js" defer></script>
+
+<%- contentFor("body") %>
+
+
+<div class="sctn_1 posts">
+
+</div>
+
+<input type="text" name="post" class="postTarget" value="<%= postTarget %>" hidden/>

@@ -1,0 +1,12 @@
+<%- contentFor('Documentation : Header') %>
+<!-- 
+  This is the homepage
+ -->
+<%- contentFor("headCode") %>
+<title><%= title %></title>
+<link rel="stylesheet" href="/css/chat.css" />
+<script defer type="module" src="/js/rejected.js"></script>
+
+<%- contentFor("body") %>
+<input id="status" name="status" type="text" value="<%= resp.status %>" />
+<input id="reason" name="reason" type="text" value="<%= resp.reason %>" />

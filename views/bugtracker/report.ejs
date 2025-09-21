@@ -1,0 +1,19 @@
+<%- contentFor('Documentation : Header') %>
+<!-- 
+  This is the homepage
+ -->
+<%- contentFor("headCode") %>
+<title><%= title %></title>
+<!-- <link rel="stylesheet" href="/css/chat.css" />
+<script defer type="module" src="/js/testPage.js"></script> -->
+<script defer type="module" src="/js/bugtracker/report.js"></script>
+
+<%- contentFor("body") %>
+
+<input class="hidden" name="pagenum" type="number" value="<%= pagenum %>" />
+<input class="hidden" name="reportnum" type="number" value="<%= reportnum %>" />
+
+
+<main id="main" class="main2">
+    <div style="height: 100%;" class="form report"></div>
+</main>

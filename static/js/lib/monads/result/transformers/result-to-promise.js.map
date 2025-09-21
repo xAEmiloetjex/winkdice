@@ -1,0 +1,1 @@
+{"version":3,"file":"result-to-promise.js","sourceRoot":"","sources":["../../../../src/result/transformers/result-to-promise.ts"],"names":[],"mappings":"AAEA,MAAM,UAAU,eAAe,CAAa,MAA2B;IACrE,OAAO,MAAM,CAAC,IAAI,EAAE;QAClB,CAAC,CAAC,OAAO,CAAC,OAAO,CAAC,MAAM,CAAC,MAAM,EAAE,CAAC;QAClC,CAAC,CAAC,OAAO,CAAC,MAAM,CAAC,MAAM,CAAC,UAAU,EAAE,CAAC,CAAA;AACzC,CAAC"}

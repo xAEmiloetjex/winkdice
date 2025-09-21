@@ -1,0 +1,112 @@
+<%- contentFor('Documentation : Header') %>
+<!-- 
+  This is the homepage
+ -->
+<%- contentFor("headCode") %>
+<title><%= title %></title>
+<!-- <link rel="stylesheet" href="/css/chat.css" />
+<script defer type="module" src="/js/testPage.js"></script> -->
+<!-- <script defer type="module" src="/js/lib/framework/examples/components/index.js"></script> -->
+
+<%- contentFor("body") %>
+<main id="#main" class="main2">
+  <article>
+    <header>
+      <h1>update v2.0.0</h1>
+    </header>
+    <section>
+      <ul>
+        <li class="form">
+          <header>
+            <h3>
+              Replaced the <code>oppedOutTelemetry</code> cookie for the
+              <code>oppedInTelemetry</code> cookie!
+            </h3>
+          </header>
+          <section>
+            This cookie is result of an experimental feature accidentally
+            getting to production!
+            <br />the first version that was actually meant to be in production
+            always has been opt-in not opt-out, <br />we still haven't anabled
+            the back-end of it though, <br />so don't worry because your data is
+            still not availible to us and we probably won't decide to farm you
+            for your data.
+          </section>
+        </li>
+        <br />
+        <li class="form">
+          <header>
+            <h3>
+              Added an error page for 404 and unexpected server-side redirects
+              to non existent pages
+            </h3>
+          </header>
+          <section></section>
+        </li>
+        <br />
+        <li class="form">
+          <header>
+            <h3>added <a href="/files">files</a> storage service</h3>
+          </header>
+          <section></section>
+        </li>
+        <br />
+        <li class="form">
+          <header>
+            <h3>added <a href="/admin">admin panel</a> for admins</h3>
+          </header>
+          <section>
+            (Non admins will be page blocked upon entering so if a
+            <code>403: Forbidden</code> error pops up then you are either not an
+            admin or you aren't logged into your admin account)
+          </section>
+        </li>
+        <br />
+        <li class="form">
+          <header>
+            <h3>
+              As you probably also have noticed... we did a lot of UI
+              improvements
+            </h3>
+          </header>
+          <section></section>
+        </li>
+        <br />
+        <li class="form">
+          <header>
+            <h3>added rainbow <a href="/theme">theme</a> v2</h3>
+          </header>
+          <section></section>
+        </li>
+        <br />
+        <li class="form">
+          <header>
+            <h3>
+              Moved a lot of the handling to the back-end and improved overall
+              security
+            </h3>
+          </header>
+          <section></section>
+        </li>
+        <br />
+        <li class="form">
+          <header>
+            <h3>
+              And as last..... i made improvements to the markdown renderer
+            </h3>
+          </header>
+          <section></section>
+        </li>
+      </ul>
+    </section>
+    <footer class="center_E">
+      <p>
+        Signed:
+        <br/>
+        <attr title="Amber-Emily Amy Nagtegaal">
+            <img src="/Signature.svg" style="height:75px;background:white;" />
+        </attr>
+      </p>
+    </footer>
+  </article>
+</main>

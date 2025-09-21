@@ -1,0 +1,27 @@
+.winkdice-ads-services__advert_banner_horizontal {
+  justify-content: center;
+  align-items: center;
+  text-align: center;
+
+  .advert {
+    height: 120px;
+    width: 480px;
+    margin: 0 auto;
+  }
+}
+
+.attr_link {
+
+  &,
+  &:hover,
+  &:active,
+  &:visited {
+    padding: 0;
+    height: 120px;
+    width: 480px;
+    background: none;
+  }
+  * {
+    user-select: none;
+  }
+}

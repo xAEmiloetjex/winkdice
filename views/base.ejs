@@ -1,0 +1,11 @@
+<%- contentFor('Documentation : Header') %>
+  <!-- 
+  This is a blank page that can be used to assign pages fully reliant on our libraries (everything in the head apart from title needs to be defined in the backend)
+ -->
+  <%- contentFor("headCode") %>
+    <title>
+      <%= title %>
+    </title>
+    <%= head %>
+
+    <%- contentFor("body") %>

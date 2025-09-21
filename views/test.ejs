@@ -1,0 +1,74 @@
+<%- contentFor('Documentation : Header') %>
+<!-- 
+  This is the homepage
+ -->
+<%- contentFor("headCode") %>
+<title><%= title %></title>
+<link rel="stylesheet" href="/css/testpage.css" />
+<script defer type="module" src="/js/testPage.js"></script>
+<style data-meta-file="_aab.css">
+.adblock_mesg {
+  /* border: var(--red_3) 1px solid; */
+  padding: 1rem;
+
+  background-color: var(--theme-bg);
+  color: var(--theme-fg);
+}
+.adblock_mesg .title-container {
+  border-bottom: rgba(128,128,128,0.5) 2px solid;
+}
+.adblock_mesg .title-container .title {
+  font-weight: bold;
+  font-size: xx-large;
+}
+.adblock_mesg .title-container .logo {
+  display: flex;
+}
+.adblock_mesg .title-container .logo .logo-title {
+  font-weight: bold;
+  font-size: xx-large;
+  font-family: Arial;
+  height: 64px;
+  vertical-align: middle;
+}
+.adblock_mesg .content-container {
+  padding: 1rem;
+}
+
+.aab.modal__container {
+  padding: 0;
+  border-radius: 1rem;
+}
+.aab.modal__content {
+  margin-top: 0;
+  margin-bottom: 0;
+}
+.aab.modal__footer {
+  display: none;
+  position: absolute;
+  width: 0px;
+  height: 0px;
+  overflow: hidden;
+}
+
+.aab_btn {
+  border-radius: 1rem;
+  margin-right: 10px;
+}
+
+.aab_btn.allow {
+  background-color: var(--theme-fg);
+  color: var(--theme-bg);
+}
+.aab_btn.subscribe {
+  background-color: var(--theme-bg-shade-3);
+  color: var(--theme-fg);
+}
+</style>
+<%- contentFor("body") %>
+<p class="output"></p>
+<main id="#main" class="main2 notification-box ">
+</main>
+<ul id="output_">
+
+</ul>

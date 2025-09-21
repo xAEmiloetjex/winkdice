@@ -1,0 +1,518 @@
+{
+  "metadata": {
+    "ids": {
+      "EV0": "42379ac3",
+      "EV1": "5fe88365",
+      "EV2": "46760598",
+      "EV3": "10776655",
+      "EV4": "af226371"
+    },
+    "HandlerState_Statuses": { "Ok": 0, "Error": 1, "Global": 2, "Unknown": 3 }
+  },
+  "_on_local": {
+    "EV1": {
+      "HandlerState": {
+        "instance": "5fe88365",
+        "status": 0,
+        "results": {
+          "on": {
+            "result_1": "{[EV1...EV4]<EventEmitter2>() test:on<Local>}::EV1"
+          },
+          "once": {}
+        }
+      },
+      "obj": { "emitId": "8ffe7a079d8414ed", "name": "signal_1", "data": [] },
+      "listeners": {
+        "name": "signal_1",
+        "ListenerId": "a0ce8de92dfa1846",
+        "index": 1
+      }
+    },
+    "EV2": {
+      "HandlerState": {
+        "instance": "46760598",
+        "status": 0,
+        "results": {
+          "on": {
+            "result_1": "{[EV1...EV4]<EventEmitter2>() test:on<Local>}::EV2"
+          },
+          "once": {}
+        }
+      },
+      "obj": { "emitId": "fd85ec9887d9a410", "name": "signal_1", "data": [] },
+      "listeners": {
+        "name": "signal_1",
+        "ListenerId": "9fbbb5f0c71ffa83",
+        "index": 1
+      }
+    },
+    "EV3": {
+      "HandlerState": {
+        "instance": "10776655",
+        "status": 0,
+        "results": {
+          "on": {
+            "result_1": "{[EV1...EV4]<EventEmitter2>() test:on<Local>}::EV3"
+          },
+          "once": {}
+        }
+      },
+      "obj": { "emitId": "457406f91a7c4246", "name": "signal_1", "data": [] },
+      "listeners": {
+        "name": "signal_1",
+        "ListenerId": "4663a94f976606e5",
+        "index": 1
+      }
+    },
+    "EV4": {
+      "HandlerState": {
+        "instance": "af226371",
+        "status": 0,
+        "results": {
+          "on": {
+            "result_1": "{[EV1...EV4]<EventEmitter2>() test:on<Local>}::EV4"
+          },
+          "once": {}
+        }
+      },
+      "obj": { "emitId": "2d8000a2dd4af431", "name": "signal_1", "data": [] },
+      "listeners": {
+        "name": "signal_1",
+        "ListenerId": "e406df1f03a80704",
+        "index": 1
+      }
+    }
+  },
+  "_on_global": {
+    "accessibleChildrenExecutorStates": [
+      { "instance": "42379ac3", "status": 3 },
+      {
+        "instance": "5fe88365",
+        "status": 0,
+        "results": {
+          "on": {
+            "result_1": "{[EV1...EV4]<EventEmitter2>() test:on<Global>}::EV1"
+          },
+          "once": {}
+        }
+      },
+      {
+        "instance": "46760598",
+        "status": 0,
+        "results": {
+          "on": {
+            "result_1": "{[EV1...EV4]<EventEmitter2>() test:on<Global>}::EV2"
+          },
+          "once": {}
+        }
+      },
+      {
+        "instance": "10776655",
+        "status": 0,
+        "results": {
+          "on": {
+            "result_1": "{[EV1...EV4]<EventEmitter2>() test:on<Global>}::EV3"
+          },
+          "once": {}
+        }
+      },
+      {
+        "instance": "af226371",
+        "status": 0,
+        "results": {
+          "on": {
+            "result_1": "{[EV1...EV4]<EventEmitter2>() test:on<Global>}::EV4"
+          },
+          "once": {}
+        }
+      }
+    ],
+    "HandlerState": { "instance": "42379ac3", "status": 2 },
+    "obj": {
+      "emitId": "e39c4df970f37637",
+      "name": "global::signal_1",
+      "data": []
+    },
+    "listeners": {
+      "ev1_on_global": {
+        "name": "global::signal_1",
+        "ListenerId": "204014a56fb19abf",
+        "index": 1
+      },
+      "ev2_on_global": {
+        "name": "global::signal_1",
+        "ListenerId": "8eb52a387b5f0600",
+        "index": 1
+      },
+      "ev3_on_global": {
+        "name": "global::signal_1",
+        "ListenerId": "34387f424a8d7e8b",
+        "index": 1
+      },
+      "ev4_on_global": {
+        "name": "global::signal_1",
+        "ListenerId": "035542179cfb74c5",
+        "index": 1
+      }
+    }
+  },
+  "_once_local": {
+    "exec1": {
+      "EV1": {
+        "HandlerState": {
+          "instance": "5fe88365",
+          "status": 0,
+          "results": {
+            "on": {},
+            "once": {
+              "result_1": "{[EV1...EV4]<EventEmitter2>() test:once<Local>}::EV1"
+            }
+          }
+        },
+        "obj": { "emitId": "1eab33d426d2cbdd", "name": "signal_2", "data": [] },
+        "listeners": {
+          "name": "signal_2",
+          "ListenerId": "4a23372f69290b65",
+          "index": 1
+        }
+      },
+      "EV2": {
+        "HandlerState": {
+          "instance": "46760598",
+          "status": 0,
+          "results": {
+            "on": {},
+            "once": {
+              "result_1": "{[EV1...EV4]<EventEmitter2>() test:once<Local>}::EV2"
+            }
+          }
+        },
+        "obj": { "emitId": "aa296b6b51dc4696", "name": "signal_2", "data": [] },
+        "listeners": {
+          "name": "signal_2",
+          "ListenerId": "ab420589517013a0",
+          "index": 1
+        }
+      },
+      "EV3": {
+        "HandlerState": {
+          "instance": "10776655",
+          "status": 0,
+          "results": {
+            "on": {},
+            "once": {
+              "result_1": "{[EV1...EV4]<EventEmitter2>() test:once<Local>}::EV3"
+            }
+          }
+        },
+        "obj": { "emitId": "c5a11ca36849e2fe", "name": "signal_2", "data": [] },
+        "listeners": {
+          "name": "signal_2",
+          "ListenerId": "71ca8f364d7b419c",
+          "index": 1
+        }
+      },
+      "EV4": {
+        "HandlerState": {
+          "instance": "af226371",
+          "status": 0,
+          "results": {
+            "on": {},
+            "once": {
+              "result_1": "{[EV1...EV4]<EventEmitter2>() test:once<Local>}::EV4"
+            }
+          }
+        },
+        "obj": { "emitId": "3a306fc6770cc7db", "name": "signal_2", "data": [] },
+        "listeners": {
+          "name": "signal_2",
+          "ListenerId": "34672c9bfdea5bec",
+          "index": 1
+        }
+      }
+    },
+    "exec2": {
+      "EV1": {
+        "HandlerState": { "instance": "5fe88365", "status": 3 },
+        "obj": { "emitId": "474ba00c1e881ac9", "name": "signal_2", "data": [] },
+        "listeners": {
+          "name": "signal_2",
+          "ListenerId": "4a23372f69290b65",
+          "index": 1
+        }
+      },
+      "EV2": {
+        "HandlerState": { "instance": "46760598", "status": 3 },
+        "obj": { "emitId": "a2e5dd54c01df753", "name": "signal_2", "data": [] },
+        "listeners": {
+          "name": "signal_2",
+          "ListenerId": "ab420589517013a0",
+          "index": 1
+        }
+      },
+      "EV3": {
+        "HandlerState": { "instance": "10776655", "status": 3 },
+        "obj": { "emitId": "b432be1329ed7345", "name": "signal_2", "data": [] },
+        "listeners": {
+          "name": "signal_2",
+          "ListenerId": "71ca8f364d7b419c",
+          "index": 1
+        }
+      },
+      "EV4": {
+        "HandlerState": { "instance": "af226371", "status": 3 },
+        "obj": { "emitId": "5b3d76ec9dcf5213", "name": "signal_2", "data": [] },
+        "listeners": {
+          "name": "signal_2",
+          "ListenerId": "34672c9bfdea5bec",
+          "index": 1
+        }
+      }
+    }
+  },
+  "_once_global": {
+    "returned": {
+      "exec1": {
+        "accessibleChildrenExecutorStates": [
+          { "instance": "42379ac3", "status": 3 },
+          { "instance": "5fe88365", "status": 3 },
+          { "instance": "46760598", "status": 3 },
+          { "instance": "10776655", "status": 3 },
+          { "instance": "af226371", "status": 3 }
+        ],
+        "HandlerState": { "instance": "42379ac3", "status": 2 },
+        "obj": {
+          "emitId": "21378f91b9a8940f",
+          "name": "global::signal_2",
+          "data": []
+        },
+        "listeners": {
+          "ev1_once_global": {
+            "name": "global::signal_2",
+            "ListenerId": "1f7382acba7851b1",
+            "index": 1
+          },
+          "ev2_once_global": {
+            "name": "global::signal_2",
+            "ListenerId": "d73ee12b66c988d7",
+            "index": 1
+          },
+          "ev3_once_global": {
+            "name": "global::signal_2",
+            "ListenerId": "6586e3ee07696045",
+            "index": 1
+          },
+          "ev4_once_global": {
+            "name": "global::signal_2",
+            "ListenerId": "d1e63c547bacf611",
+            "index": 1
+          }
+        }
+      },
+      "exec2": {
+        "accessibleChildrenExecutorStates": [
+          { "instance": "42379ac3", "status": 3 },
+          {
+            "instance": "5fe88365",
+            "status": 0,
+            "results": {
+              "on": {},
+              "once": {
+                "result_1": "{[EV1...EV4]<EventEmitter2>() test:once<Global>}::EV1"
+              }
+            }
+          },
+          {
+            "instance": "46760598",
+            "status": 0,
+            "results": {
+              "on": {},
+              "once": {
+                "result_1": "{[EV1...EV4]<EventEmitter2>() test:once<Global>}::EV2"
+              }
+            }
+          },
+          {
+            "instance": "10776655",
+            "status": 0,
+            "results": {
+              "on": {},
+              "once": {
+                "result_1": "{[EV1...EV4]<EventEmitter2>() test:once<Global>}::EV3"
+              }
+            }
+          },
+          {
+            "instance": "af226371",
+            "status": 0,
+            "results": {
+              "on": {},
+              "once": {
+                "result_1": "{[EV1...EV4]<EventEmitter2>() test:once<Global>}::EV4"
+              }
+            }
+          }
+        ],
+        "HandlerState": { "instance": "42379ac3", "status": 2 },
+        "obj": {
+          "emitId": "9da15caa029ba7b6",
+          "name": "global::signal_2",
+          "data": []
+        },
+        "listeners": {
+          "ev1_once_global": {
+            "name": "global::signal_2",
+            "ListenerId": "1f7382acba7851b1",
+            "index": 1
+          },
+          "ev2_once_global": {
+            "name": "global::signal_2",
+            "ListenerId": "d73ee12b66c988d7",
+            "index": 1
+          },
+          "ev3_once_global": {
+            "name": "global::signal_2",
+            "ListenerId": "6586e3ee07696045",
+            "index": 1
+          },
+          "ev4_once_global": {
+            "name": "global::signal_2",
+            "ListenerId": "d1e63c547bacf611",
+            "index": 1
+          }
+        }
+      }
+    },
+    "globalCount": { "ev1": 1, "ev2": 1, "ev3": 1, "ev4": 1 }
+  },
+  "_off_local": {
+    "EV1": {
+      "HandlerState": {
+        "instance": "5fe88365",
+        "status": 0,
+        "results": {
+          "on": {
+            "result_1": "{[EV1...EV4]<EventEmitter2>() test:on<Local>}::EV1"
+          },
+          "once": {}
+        }
+      },
+      "obj": { "emitId": "d0abb57f260a593c", "name": "signal_1", "data": [] },
+      "listeners": {
+        "name": "signal_1",
+        "ListenerId": "a0ce8de92dfa1846",
+        "index": 1
+      }
+    },
+    "EV2": {
+      "HandlerState": { "instance": "46760598", "status": 3 },
+      "obj": { "emitId": "0d6c4588b14aac41", "name": "signal_1", "data": [] },
+      "listeners": {
+        "name": "signal_1",
+        "ListenerId": "9fbbb5f0c71ffa83",
+        "index": 1,
+        "then_ver": "reject"
+      }
+    },
+    "EV3": {
+      "HandlerState": {
+        "instance": "10776655",
+        "status": 0,
+        "results": {
+          "on": {
+            "result_1": "{[EV1...EV4]<EventEmitter2>() test:on<Local>}::EV3"
+          },
+          "once": {}
+        }
+      },
+      "obj": { "emitId": "fff0a51c648c9552", "name": "signal_1", "data": [] },
+      "listeners": {
+        "name": "signal_1",
+        "ListenerId": "4663a94f976606e5",
+        "index": 1
+      }
+    },
+    "EV4": {
+      "HandlerState": {
+        "instance": "af226371",
+        "status": 0,
+        "results": {
+          "on": {
+            "result_1": "{[EV1...EV4]<EventEmitter2>() test:on<Local>}::EV4"
+          },
+          "once": {}
+        }
+      },
+      "obj": { "emitId": "2af2c1e3e516d75d", "name": "signal_1", "data": [] },
+      "listeners": {
+        "name": "signal_1",
+        "ListenerId": "e406df1f03a80704",
+        "index": 1
+      }
+    }
+  },
+  "_off_global": {
+    "accessibleChildrenExecutorStates": [
+      { "instance": "42379ac3", "status": 3 },
+      {
+        "instance": "5fe88365",
+        "status": 0,
+        "results": {
+          "on": {
+            "result_1": "{[EV1...EV4]<EventEmitter2>() test:on<Global>}::EV1"
+          },
+          "once": {}
+        }
+      },
+      { "instance": "46760598", "status": 3 },
+      {
+        "instance": "10776655",
+        "status": 0,
+        "results": {
+          "on": {
+            "result_1": "{[EV1...EV4]<EventEmitter2>() test:on<Global>}::EV3"
+          },
+          "once": {}
+        }
+      },
+      {
+        "instance": "af226371",
+        "status": 0,
+        "results": {
+          "on": {
+            "result_1": "{[EV1...EV4]<EventEmitter2>() test:on<Global>}::EV4"
+          },
+          "once": {}
+        }
+      }
+    ],
+    "HandlerState": { "instance": "42379ac3", "status": 2 },
+    "obj": {
+      "emitId": "ceab6d1ddae2ede6",
+      "name": "global::signal_1",
+      "data": []
+    },
+    "listeners": {
+      "ev1_on_global": {
+        "name": "global::signal_1",
+        "ListenerId": "204014a56fb19abf",
+        "index": 1
+      },
+      "ev2_on_global": {
+        "name": "global::signal_1",
+        "ListenerId": "8eb52a387b5f0600",
+        "index": 1
+      },
+      "ev3_on_global": {
+        "name": "global::signal_1",
+        "ListenerId": "34387f424a8d7e8b",
+        "index": 1
+      },
+      "ev4_on_global": {
+        "name": "global::signal_1",
+        "ListenerId": "035542179cfb74c5",
+        "index": 1
+      }
+    }
+  }
+}

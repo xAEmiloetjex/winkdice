@@ -1,0 +1,66 @@
+<%- contentFor('Documentation : Header') %>
+<!-- 
+  This is the homepage
+ -->
+<%- contentFor("headCode") %>
+<title><%= title %></title>
+<!-- <link rel="stylesheet" href="/css/chat.css" />
+<script defer type="module" src="/js/testPage.js"></script> -->
+<!-- <script defer type="module" src="/js/lib/framework/examples/components/index.js"></script> -->
+
+<%- contentFor("body") %>
+<main id="main" class="main2">
+  <article>
+    <header>
+      <h1>update v2.0.1</h1>
+    </header>
+    <section>
+      <ul>
+        <!-- BLOCK:START -->
+
+        <li class="form" id="#RCU">
+          <header>
+            <h3>About the '<strong>R</strong>emote <strong>C</strong>lient control <strong>U</strong>tils' and the code evaluation in general</h3>
+          </header>
+          <section>
+            <p>
+                Even though they can in theory be used to collect personal data, it's against what we stand for, and any admin that tries to use this for that reason will be terminated from the project and a police investigation will follow!
+            </p>
+            <hr />
+            <p>This here is all that the utils are, just some functions to make the flow of remote controlling a session a bit easier.</p>
+            <img src="/screenshots/RCU-Code.jpg" style="width: 70%;"/>
+            <p>
+                we made this mostly to automate actions on our own displays in our office,<br/>
+                but they may also be used to provide an easier way to provide tech support on the site.
+                <br/><br/>
+                as you can see we have a silly function to write out text instead of just setting a value,<br/>
+                this especially is made for just effect.<br/>
+                Also all of our utilities are accesible at <a href="/js/lib/Utils.js">/js/lib/Utils.js</a>
+            </p>
+            <hr />
+            <p>
+                Also, sometimes an error or warning will pop up,<br />
+                those messages usually say "(admins may contact you)".<br />
+                Usually these messages are a result of something happening on the client,<br />
+                But sometimes the errors and warnings that occur on the client side are a result of something happening on the server side.<br /><br/>
+                If that's the case then we may try to contact you on discord or guilded if we know them, otherwise we may modify the <a href="/js/_globals.js">global init script</a> to send you a toast notification everytime you load a page with our contact information on it.<br/>
+                you can always choose not to answer us and we will usually remove the notification in about 10 days but we would really appreciate it if you would participate in the contact we want to get because that would help with improving the site!
+            </p>
+          </section>
+        </li>
+        <br />
+
+        <!-- BLOCK:END -->
+      </ul>
+    </section>
+    <footer class="center_E">
+      <p>
+        Signed:
+        <br />
+        <attr title="Amber-Emily Amy Nagtegaal">
+          <img src="/Signature.svg" style="height: 75px; background: white" />
+        </attr>
+      </p>
+    </footer>
+  </article>
+</main>
